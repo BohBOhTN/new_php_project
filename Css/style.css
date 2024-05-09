@@ -2,4 +2,31 @@
     --MineShaft : #2B2B2B;
     --DoveGray : #656565;
     --Nero : #FFFFFF;
+    --AppBackground: #f0eada;
+
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Viewport height */
+    display: flex; /* Flexbox to center the container */
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    background-color: white; /* Background color of the entire page */
+}
+
+/* Styling for the container */
+.container {
+    width: 100%; /* Initially set to 100% width */
+    max-width: 500px; /* Maximum width of 500px */
+    height: 100%; /* Full height of the screen */
+    max-height: 100vh; /* Maximum height of the viewport */
+    background-color: #f0eada; /* Background color of the box */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Include padding and border in width and height */
+    border-radius: 20px; /* Rounded corners with a radius of 20px */
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3), -5px 0 15px rgba(0, 0, 0, 0.3); /* Shadow on both sides */
+    
+}
+
