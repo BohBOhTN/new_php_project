@@ -1,9 +1,9 @@
+/* Resetting margin and padding */
 :root{
     --MineShaft : #2B2B2B;
     --DoveGray : #656565;
     --Nero : #FFFFFF;
     --AppBackground: #f0eada;
-
 }
 
 body {
@@ -16,7 +16,7 @@ body {
     background-color: white; /* Background color of the entire page */
 }
 
-/* Styling for the container */
+/* Container styling */
 .container {
     width: 100%; /* Initially set to 100% width */
     max-width: 500px; /* Maximum width of 500px */
@@ -25,8 +25,73 @@ body {
     background-color: #f0eada; /* Background color of the box */
     margin: 0 auto; /* Center the container */
     box-sizing: border-box; /* Include padding and border in width and height */
-    border-radius: 20px; /* Rounded corners with a radius of 20px */
-    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3), -5px 0 15px rgba(0, 0, 0, 0.3); /* Shadow on both sides */
-    
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3), -5px 0 15px rgba(0, 0, 0, 0.3); /* Shadows */
+    padding: 10px; /* Left and right padding */
 }
 
+/* Top Menu Section Styling */
+.top-menu {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding around the top menu */
+}
+
+/* Header Container styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+/* Text and title styling */
+.left-text, .right-title {
+    font-size: 16px;
+}
+
+/* Grid Container styling */
+.grid-container {
+    display: flex;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px 0; /* Top and bottom padding */
+    height: 150px; /* Set fixed height of the grid container */
+    white-space: nowrap; /* Prevent grid wrapping */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    width: 100%; /* Match the width of the container */
+}
+
+.grid-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit-based browsers */
+}
+
+/* Grid box styling */
+.grid-box {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Adjust spacing between boxes */
+    width: calc(150px); /* Width of each grid box */
+    text-align: center;
+    white-space: normal; /* Allow text wrapping in the box */
+}
+
+/* Image styling */
+.grid-box img {
+    width: 100%; /* Full width */
+    height: auto;
+}
+
+/* Text area styling */
+.text-area {
+    background-image: url('text-bg1.png'); /* Initial background image */
+    color: white; /* Initial text color */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Transition effect */
+}
+
+/* Hover effect for grid box */
+.grid-box:hover .text-area {
+    background-image: url('text-bg2.png'); /* Hover background image */
+    background-color: #ae4035; /* Hover background color */
+    color: black; /* Hover text color */
+}
