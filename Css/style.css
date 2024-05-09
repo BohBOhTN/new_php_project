@@ -3,8 +3,10 @@
     --MineShaft : #2B2B2B;
     --DoveGray : #656565;
     --Nero : #FFFFFF;
-    --AppBackground: #f0eada;
+    --AppBackground: #f3ecd6;
 }
+
+
 
 body {
     margin: 0;
@@ -14,15 +16,16 @@ body {
     justify-content: center; /* Center the container horizontally */
     align-items: center; /* Center the container vertically */
     background-color: white; /* Background color of the entire page */
+    font-family: mone;
 }
 
 /* Container styling */
 .container {
     width: 100%; /* Initially set to 100% width */
-    max-width: 500px; /* Maximum width of 500px */
+    max-width: 480px; /* Maximum width of 500px */
     height: 100%; /* Full height of the screen */
     max-height: 100vh; /* Maximum height of the viewport */
-    background-color: #f0eada; /* Background color of the box */
+    background-color: var(--AppBackground); /* Background color of the box */
     margin: 0 auto; /* Center the container */
     box-sizing: border-box; /* Include padding and border in width and height */
     border-radius: 20px; /* Rounded corners */
@@ -47,6 +50,7 @@ body {
 /* Text and title styling */
 .left-text, .right-title {
     font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 /* Grid Container styling */
@@ -82,8 +86,8 @@ body {
 
 /* Text area styling */
 .text-area {
-    background-image: url('text-bg1.png'); /* Initial background image */
-    color: white; /* Initial text color */
+    background-color: white;
+    color: #b81029; /* Initial text color */
     padding: 10px;
     border-radius: 5px; /* Rounded corners */
     transition: all 0.3s ease; /* Transition effect */
@@ -91,7 +95,103 @@ body {
 
 /* Hover effect for grid box */
 .grid-box:hover .text-area {
-    background-image: url('text-bg2.png'); /* Hover background image */
-    background-color: #ae4035; /* Hover background color */
+    background-color: #b81029; /* Hover background color */
     color: black; /* Hover text color */
+}
+
+
+/* Second Section Styling */
+.sub-category-section {
+    margin-top: 5px; /* Add margin between sections */
+}
+
+/* Title Container Styling */
+.title-container {
+    padding: 10px; /* Padding around the title */
+}
+
+/* Title Text Styling */
+.title-text {
+    font-size: 16px;
+    font-weight: bold;
+    /* Add other styles for title as needed */
+}
+
+/* Sub-Category Grid Container Styling */
+.sub-category-grid {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    height: 410px; /* Set the desired height for the grid container */
+    padding: 10px; /* Padding for grid container */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE */
+}
+
+.sub-category-grid::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit-based browsers */
+}
+
+
+/* Sub-Category Box Styling */
+.sub-category-box {
+    width: 100%; /* Full width of the container */
+    margin-bottom: 10px; /* Spacing between boxes */
+    display: flex; /* Flex layout */
+    align-items: center; /* Align content vertically center */
+    justify-content: space-between; /* Space between text and image */
+    /* background-image: url('path/to/your/background-image.jpg'); Background image */
+    background-color: #FFFFFF;
+    background-size: cover; /* Make the image cover the entire grid box */
+    background-position: center; /* Center the image */
+    border-radius: 10px; /* Optional: Rounded corners */
+    padding: 10px; /* Padding around content */
+    color: black; /* Initial text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for Sub-Category Box */
+.sub-category-box:hover {
+    background-color: #b81029; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+
+/* Grid Content Styling */
+.grid-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and image */
+    width: 100%; /* Full width */
+}
+
+/* Image Container Styling */
+.image-container {
+    margin-left: 10px; /* Spacing on the left */
+}
+
+.image-container img {
+    width: 131px; /* Full width of the grid content */
+    height: 131px; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image is contained within the space */
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+}
+
+/* Text Container Styling */
+.text-container {
+    display: flex;
+    flex-direction: column; /* Vertical layout for text */
+    align-items: flex-start; /* Align text left */
+    margin-right: 90px; /* Push text to the left side */
+}
+
+.sub-category-title {
+    font-weight: bold; /* Bold title */
+    margin: 0 0 5px 0; /* Margin around title */
+}
+
+.serving-size, .combinations {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Smaller font size */
 }
