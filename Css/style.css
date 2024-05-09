@@ -194,4 +194,62 @@ body {
 .serving-size, .combinations {
     margin: 0; /* Remove default margin */
     font-size: 14px; /* Smaller font size */
+
+    
+}
+
+/* Container Styling */
+.container {
+    width: 100%; /* Initially set to 100% width */
+    max-width: 500px; /* Maximum width of 500px */
+    height: 100%; /* Full height of the screen */
+    max-height: 100vh; /* Maximum height of the viewport */
+    background-color: #f0eada; /* Background color of the box */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Include padding and border in width and height */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3), -5px 0 15px rgba(0, 0, 0, 0.3); /* Shadows */
+    padding: 10px; /* Add padding to the container */
+    position: relative; /* Set the container's position to relative */
+}
+
+/* Floating Cart Button */
+.floating-cart-button {
+    position: absolute; /* Position the button absolutely within the container */
+    bottom: 20px; /* Distance from the bottom of the container */
+    right: 20px; /* Distance from the right of the container */
+    width: 50px;
+    height: 50px;
+    background-color: #b81029; /* Set background color to #b81029 */
+    border-radius: 50%; /* Rounded button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    cursor: pointer; /* Hand cursor on hover */
+    color: #ffffff; /* Set the color of the SVG logo to white */
+    z-index: 1000; /* Make sure it floats above other content */
+}
+
+/* Styling for the cart SVG */
+.floating-cart-button svg {
+    width: 24px; /* Set SVG width */
+    height: 24px; /* Set SVG height */
+}
+
+/* Styling for the cart counter */
+.cart-counter {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 20px;
+    height: 20px;
+    background-color: white; /* Background color for the counter */
+    border-radius: 50%; /* Make the counter circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b81029; /* Counter text color set to #b81029 */
+    font-size: 12px;
+    font-weight: bold;
 }
