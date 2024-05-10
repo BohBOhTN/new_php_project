@@ -1,0 +1,255 @@
+/* Resetting margin and padding */
+:root{
+    --MineShaft : #2B2B2B;
+    --DoveGray : #656565;
+    --Nero : #FFFFFF;
+    --AppBackground: #f3ecd6;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Viewport height */
+    display: flex; /* Flexbox to center the container */
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    background-color: white; /* Background color of the entire page */
+    font-family: mone;
+}
+
+/* Container styling */
+.container {
+    width: 100%; /* Initially set to 100% width */
+    max-width: 480px; /* Maximum width of 500px */
+    height: 100%; /* Full height of the screen */
+    max-height: 100vh; /* Maximum height of the viewport */
+    background-color: var(--AppBackground); /* Background color of the box */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Include padding and border in width and height */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3), -5px 0 15px rgba(0, 0, 0, 0.3); /* Shadows */
+    padding: 10px; /* Left and right padding */
+}
+
+/* Top Menu Section Styling */
+.top-menu {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding around the top menu */
+}
+
+/* Header Container styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+/* Text and title styling */
+.left-text, .right-title {
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* Grid Container styling */
+.grid-container {
+    display: flex;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px 0; /* Top and bottom padding */
+    height: 150px; /* Set fixed height of the grid container */
+    white-space: nowrap; /* Prevent grid wrapping */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    width: 100%; /* Match the width of the container */
+}
+
+.grid-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit-based browsers */
+}
+
+/* Grid box styling */
+.grid-box {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Adjust spacing between boxes */
+    width: calc(150px); /* Width of each grid box */
+    text-align: center;
+    white-space: normal; /* Allow text wrapping in the box */
+}
+
+/* Image styling */
+.grid-box img {
+    width: 100%; /* Full width */
+    height: auto;
+}
+
+/* Text area styling */
+.text-area {
+    background-color: white;
+    color: #b81029; /* Initial text color */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Transition effect */
+}
+
+/* Hover effect for grid box */
+.grid-box:hover .text-area {
+    background-color: #b81029; /* Hover background color */
+    color: black; /* Hover text color */
+}
+
+
+/* Second Section Styling */
+.sub-category-section {
+    margin-top: 5px; /* Add margin between sections */
+}
+
+/* Title Container Styling */
+.title-container {
+    padding: 10px; /* Padding around the title */
+}
+
+/* Title Text Styling */
+.title-text {
+    font-size: 16px;
+    font-weight: bold;
+    /* Add other styles for title as needed */
+}
+
+/* Sub-Category Grid Container Styling */
+.sub-category-grid {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    height: 410px; /* Set the desired height for the grid container */
+    padding: 10px; /* Padding for grid container */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE */
+}
+
+.sub-category-grid::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit-based browsers */
+}
+
+
+/* Sub-Category Box Styling */
+.sub-category-box {
+    width: 100%; /* Full width of the container */
+    margin-bottom: 10px; /* Spacing between boxes */
+    display: flex; /* Flex layout */
+    align-items: center; /* Align content vertically center */
+    justify-content: space-between; /* Space between text and image */
+    /* background-image: url('path/to/your/background-image.jpg'); Background image */
+    background-color: #FFFFFF;
+    background-size: cover; /* Make the image cover the entire grid box */
+    background-position: center; /* Center the image */
+    border-radius: 10px; /* Optional: Rounded corners */
+    padding: 10px; /* Padding around content */
+    color: black; /* Initial text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for Sub-Category Box */
+.sub-category-box:hover {
+    background-color: #b81029; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+
+/* Grid Content Styling */
+.grid-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and image */
+    width: 100%; /* Full width */
+}
+
+/* Image Container Styling */
+.image-container {
+    margin-left: 10px; /* Spacing on the left */
+}
+
+.image-container img {
+    width: 131px; /* Full width of the grid content */
+    height: 131px; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image is contained within the space */
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+}
+
+/* Text Container Styling */
+.text-container {
+    display: flex;
+    flex-direction: column; /* Vertical layout for text */
+    align-items: flex-start; /* Align text left */
+    margin-right: 90px; /* Push text to the left side */
+}
+
+.sub-category-title {
+    font-weight: bold; /* Bold title */
+    margin: 0 0 5px 0; /* Margin around title */
+}
+
+.serving-size, .combinations {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Smaller font size */
+
+    
+}
+
+/* Container Styling */
+.container {
+    width: 100%; /* Initially set to 100% width */
+    max-width: 500px; /* Maximum width of 500px */
+    height: 100%; /* Full height of the screen */
+    max-height: 100vh; /* Maximum height of the viewport */
+    background-color: #f0eada; /* Background color of the box */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box; /* Include padding and border in width and height */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3), -5px 0 15px rgba(0, 0, 0, 0.3); /* Shadows */
+    padding: 10px; /* Add padding to the container */
+    position: relative; /* Set the container's position to relative */
+}
+
+/* Floating Cart Button */
+.floating-cart-button {
+    position: absolute; /* Position the button absolutely within the container */
+    bottom: 20px; /* Distance from the bottom of the container */
+    right: 20px; /* Distance from the right of the container */
+    width: 50px;
+    height: 50px;
+    background-color: #b81029; /* Set background color to #b81029 */
+    border-radius: 50%; /* Rounded button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    cursor: pointer; /* Hand cursor on hover */
+    color: #ffffff; /* Set the color of the SVG logo to white */
+    z-index: 1000; /* Make sure it floats above other content */
+}
+
+/* Styling for the cart SVG */
+.floating-cart-button svg {
+    width: 24px; /* Set SVG width */
+    height: 24px; /* Set SVG height */
+}
+
+/* Styling for the cart counter */
+.cart-counter {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 20px;
+    height: 20px;
+    background-color: white; /* Background color for the counter */
+    border-radius: 50%; /* Make the counter circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b81029; /* Counter text color set to #b81029 */
+    font-size: 12px;
+    font-weight: bold;
+}

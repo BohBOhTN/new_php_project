@@ -5,8 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <div class="container">
+        <!-- Top Menu Section -->
+        <div class="top-menu">
+            <!-- Header Container -->
+            <div class="header-container">
+                <span class="left-text">Categories</span>
+            </div>
+
+            <!-- Grid Container -->
+            <div class="grid-container">
+                <!-- Category Grid -->
+                <div class="grid-box">
+                    <img src="../Images/MENU/1699371388773-266230873-juhgbvf.png.png" alt="Category 1">
+                    <div class="text-area">
+                        <span class="text">Pizza</span>
+                    </div>
+                </div>
+                <div class="grid-box">
+                    <img src="../Images/MENU/1699371388773-266230873-juhgbvf.png.png" alt="Category 1">
+                    <div class="text-area">
+                        <span class="text">Pizza</span>
+                    </div>
+                </div>
+                <div class="grid-box">
+                    <img src="../Images/MENU/1699371388773-266230873-juhgbvf.png.png" alt="Category 1">
+                    <div class="text-area">
+                        <span class="text">Pizza</span>
+                    </div>
+                </div>
+                <div class="grid-box">
+                    <img src="../Images/MENU/1699371388773-266230873-juhgbvf.png.png" alt="Category 1">
+                    <div class="text-area">
+                        <span class="text">Pizza</span>
+                    </div>
+                </div>
+                <!-- Repeat grid-box for each category -->
+                <!-- Add more grid boxes for more categories as needed -->
+            </div>
+        </div>
+
+                <!-- Second Section -->
+        <div class="sub-category-section">
+            <!-- Title Container -->
+            <div class="title-container">
+                <span class="title-text">Sub-Categories</span>
+            </div>
+
+            <!-- Grid Container -->
+            <div class="sub-category-grid">
+                <!-- Sub-category Grid -->
+                <div class="sub-category-box">
+                    <div class="grid-content">
+                        <div class="image-container">
+                            <img src="../Images/MENU/1699370280718-915509668-10.png.png" alt="Sub-Category 1">
+                        </div>
+                        <div class="text-container">
+                            <h3 class="sub-category-title">Sub-Category 1</h3>
+                            <p class="serving-size">2 persons, 12" pizza</p>
+                            <p class="combinations">Combinations: Option 1, Option 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-category-box">
+                    <div class="grid-content">
+                        <div class="image-container">
+                            <img src="../Images/MENU/1699370272644-806833052-30.png.png" alt="Sub-Category 1">
+                        </div>
+                        <div class="text-container">
+                            <h3 class="sub-category-title">Sub-Category 1</h3>
+                            <p class="serving-size">2 persons, 12" pizza</p>
+                            <p class="combinations">Combinations: Option 1, Option 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-category-box">
+                    <div class="grid-content">
+                        <div class="image-container">
+                            <img src="../Images/MENU/1699370288000-779121028-18.png.png" alt="Sub-Category 1">
+                        </div>
+                        <div class="text-container">
+                            <h3 class="sub-category-title">Sub-Category 1</h3>
+                            <p class="serving-size">2 persons, 12" pizza</p>
+                            <p class="combinations">Combinations: Option 1, Option 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-category-box">
+                    <div class="grid-content">
+                        <div class="image-container">
+                            <img src="../Images/MENU/1699370259863-610532782-5.png.png" alt="Sub-Category 1">
+                        </div>
+                        <div class="text-container">
+                            <h3 class="sub-category-title">Sub-Category 1</h3>
+                            <p class="serving-size">2 persons, 12" pizza</p>
+                            <p class="combinations">Combinations: Option 1, Option 2</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat sub-category-box for each sub-category -->
+                <!-- Add more sub-category boxes as needed -->
+            </div>
+            <!-- Floating Shopping Cart Button -->
+            
+
+        </div>
+
+        <div id="cart-button" class="floating-cart-button" onclick="redirectToCart()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 20C10.1 20 11 19.1 11 18C11 16.9 10.1 16 9 16C7.9 16 7 16.9 7 18C7 19.1 7.9 20 9 20ZM16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16C14.9 16 14 16.9 14 18C14 19.1 14.9 20 16 20ZM7.41 4L6 2L4 2L2.75 2L3.63 4H19L17 14H6.64L7.41 4ZM7 16H17L19 16H19.59L20.24 19H4.76L5.41 16H7Z" fill="#FFFFFF"/>
+            </svg>
+            <span id="cart-counter" class="cart-counter">0</span>
+        </div>
+
+        <script>
+            function redirectToCart() {
+                window.location.href = 'cart.html'; 
+            }
+        </script>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="../Scripts/main.js"></script>
 </body>
 </html>
