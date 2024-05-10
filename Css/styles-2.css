@@ -39,65 +39,82 @@ body {
     padding: 10px; /* Padding around the top menu */
 }
 
-/* Header Container styling */
-.header-container {
+
+/* Top Menu Container */
+/* Top Menu Container */
+.top-menu-container {
+    display: flex; /* Use Flexbox for the layout */
+    align-items: center; /* Align content vertically center */
+    padding: 10px; /* Add padding around the container */
+}
+
+/* Back Arrow Box Styling */
+.back-arrow-box {
+    width: 50px; /* Width of the box */
+    height: 50px; /* Height of the box */
+    background-color: #b81029; /* Background color */
+    display: flex; /* Use Flexbox to center the SVG */
+    align-items: center; /* Vertically center the SVG */
+    justify-content: center; /* Horizontally center the SVG */
+    cursor: pointer; /* Hand cursor on hover */
+    margin-right: 20px; /* Space between back arrow box and category title box */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Category Title Box Styling */
+.category-title-box {
+    flex-grow: 1; /* Allow the box to take up the remaining space */
+    height: 50px; /* Same height as the back arrow box */
+    background-color: #b81029; /* Same background color as the back arrow box */
+    display: flex; /* Use Flexbox to center the text */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    padding: 0 20px; /* Add padding inside the box */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Category Title Styling */
+.category-title {
+    color: white; /* Set text color to white */
+    font-weight: bold; /* Make the text bold */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+
+
+/* Styling for the text-container */
+.text-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
+    flex-direction: column; /* Arrange text vertically */
+    align-items: flex-start; /* Align text left */
+    margin-top: 10px; /* Margin on top */
 }
 
-/* Text and title styling */
-.left-text, .right-title {
-    font-size: 16px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+/* Styling for the product name */
+.product-name {
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 5px; /* Margin under the product name */
 }
 
-/* Grid Container styling */
-.grid-container {
-    display: flex;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 10px 0; /* Top and bottom padding */
-    height: 150px; /* Set fixed height of the grid container */
-    white-space: nowrap; /* Prevent grid wrapping */
-    scroll-behavior: smooth; /* Smooth scrolling */
-    width: 100%; /* Match the width of the container */
+/* Styling for the product price */
+.product-price {
+    color: red; /* Text color set to red */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 5px; /* Margin under the product price */
 }
 
-.grid-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar in WebKit-based browsers */
+/* Styling for the view-more link */
+.view-more {
+    font-size: 14px; /* Smaller font size */
+    color: gray; /* Text color set to gray */
+    text-decoration: none; /* Remove text decoration */
+    cursor: pointer; /* Hand cursor on hover */
 }
 
-/* Grid box styling */
-.grid-box {
-    flex: 0 0 auto;
-    margin-right: 10px; /* Adjust spacing between boxes */
-    width: calc(150px); /* Width of each grid box */
-    text-align: center;
-    white-space: normal; /* Allow text wrapping in the box */
-}
 
-/* Image styling */
-.grid-box img {
-    width: 100%; /* Full width */
-    height: auto;
-}
 
-/* Text area styling */
-.text-area {
-    background-color: white;
-    color: #b81029; /* Initial text color */
-    padding: 10px;
-    border-radius: 5px; /* Rounded corners */
-    transition: all 0.3s ease; /* Transition effect */
-}
-
-/* Hover effect for grid box */
-.grid-box:hover .text-area {
-    background-color: #b81029; /* Hover background color */
-    color: black; /* Hover text color */
-}
 
 
 /* Second Section Styling */
@@ -123,7 +140,7 @@ body {
     flex-direction: column; /* Vertical layout */
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: hidden; /* Disable horizontal scrolling */
-    height: 410px; /* Set the desired height for the grid container */
+    height: 520px; /* Set the desired height for the grid container */
     padding: 10px; /* Padding for grid container */
     scrollbar-width: none; /* Hide scrollbar in Firefox */
     -ms-overflow-style: none; /* Hide scrollbar in IE */
@@ -213,6 +230,50 @@ body {
     position: relative; /* Set the container's position to relative */
 }
 
+/* Modal Styles */
+.modal {
+    display: none; /* Hide modal initially */
+    position: fixed; /* Fixed positioning */
+    z-index: 1; /* On top of other elements */
+    padding-top: 100px; /* Top padding */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Allow scroll */
+    background-color: rgba(0, 0, 0, 0.4); /* Background color */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Set the modal width */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Close button hover effect */
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
 /* Floating Cart Button */
 .floating-cart-button {
     position: absolute; /* Position the button absolutely within the container */
@@ -252,8 +313,4 @@ body {
     color: #b81029; /* Counter text color set to #b81029 */
     font-size: 12px;
     font-weight: bold;
-}
-
-a{
-    text-decoration: none;
 }

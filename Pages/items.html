@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="../Css/styles-2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Top Menu Section -->
+        <div class="top-menu">
+
+            <!-- Top Menu Container -->
+            <div class="top-menu-container">
+                <!-- Back Arrow Box -->
+                <div class="back-arrow-box" onclick="goBackToIndex()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 5L8 12L15 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <!-- Category Title Box -->
+                <div class="category-title-box">
+                    <span class="category-title">Category Title</span>
+                </div>
+            </div>
+
+
+        </div>
+
+                <!-- Second Section -->
+        <div class="sub-category-section">
+            <!-- Title Container -->
+            <div class="title-container">
+                <span class="title-text">Sub-Categories</span>
+            </div>
+
+            <!-- Grid Container -->
+            <div class="sub-category-grid">
+                <!-- Sub-category Grid -->
+                <a href="#" class="sub-category-box" onclick="openPopup(event)">
+                    <div class="grid-content">
+                        <div class="image-container">
+                            <img src="../Images/MENU/1699370280718-915509668-10.png.png" alt="Product">
+                        </div>
+                        <div class="text-container">
+                            <h3 class="product-name">Product Name</h3>
+                            <p class="product-price">$9.99</p>
+                            <p class="view-more">Click here to view details</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="sub-category-box" onclick="openPopup(event)">
+                    <div class="grid-content">
+                        <div class="image-container">
+                            <img src="../Images/MENU/1699370280718-915509668-10.png.png" alt="Product">
+                        </div>
+                        <div class="text-container">
+                            <h3 class="product-name">Product Name</h3>
+                            <p class="product-price">$9.99</p>
+                            <p class="view-more">Click here to view details</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="sub-category-box" onclick="openPopup(event)">
+                    <div class="grid-content">
+                        <div class="image-container">
+                            <img src="../Images/MENU/1699370280718-915509668-10.png.png" alt="Product">
+                        </div>
+                        <div class="text-container">
+                            <h3 class="product-name">Product Name</h3>
+                            <p class="product-price">$9.99</p>
+                            <p class="view-more">Click here to view details</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="sub-category-box" onclick="openPopup(event)">
+                    <div class="grid-content">
+                        <div class="image-container">
+                            <img src="../Images/MENU/1699370280718-915509668-10.png.png" alt="Product">
+                        </div>
+                        <div class="text-container">
+                            <h3 class="product-name">Product Name</h3>
+                            <p class="product-price">$9.99</p>
+                            <p class="view-more">Click here to view details</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="sub-category-box" onclick="openPopup(event)">
+                    <div class="grid-content">
+                        <div class="image-container">
+                            <img src="../Images/MENU/1699370280718-915509668-10.png.png" alt="Product">
+                        </div>
+                        <div class="text-container">
+                            <h3 class="product-name">Product Name</h3>
+                            <p class="product-price">$9.99</p>
+                            <p class="view-more">Click here to view details</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            
+            <div id="popupModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closePopup()">&times;</span>
+                    <h2>Product Details</h2>
+                    <!-- Add form or other content here for customizing the product -->
+                    <p>Custom product details go here...</p>
+                    <!-- Add more elements to customize the product -->
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div id="cart-button" class="floating-cart-button" onclick="redirectToCart()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 20C10.1 20 11 19.1 11 18C11 16.9 10.1 16 9 16C7.9 16 7 16.9 7 18C7 19.1 7.9 20 9 20ZM16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16C14.9 16 14 16.9 14 18C14 19.1 14.9 20 16 20ZM7.41 4L6 2L4 2L2.75 2L3.63 4H19L17 14H6.64L7.41 4ZM7 16H17L19 16H19.59L20.24 19H4.76L5.41 16H7Z" fill="#FFFFFF"/>
+            </svg>
+            <span id="cart-counter" class="cart-counter">0</span>
+        </div>
+
+        <script>
+            function redirectToCart() {
+                window.location.href = 'cart.html'; 
+            }
+        </script>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="../Scripts/main.js"></script>
+</body>
+</html>
